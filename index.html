@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World News Portal</title>
+
+  <script src="https://kit.fontawesome.com/5573a1ee7b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav class="
+relative
+w-full
+flex flex-wrap
+items-center
+justify-between
+px-8
+py-4
+bg-indigo-50
+text-gray-500
+hover:text-gray-700
+focus:text-gray-700
+border-gray-400 border-b-2
+navbar navbar-expand-lg navbar-light
+">
+    <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+      <button class="
+    navbar-toggler
+    text-gray-500
+    border-0
+    hover:shadow-none hover:no-underline
+    py-2
+    px-2.5
+    bg-transparent
+    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+          </path>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+        <a class="text-xl text-black" href="#"><span class="text-indigo-700 font-semibold">World News </span> Portal</a>
+        <!-- Left links -->
+        <ul class="navbar-nav flex flex-col pl-0 list-style-none ml-auto">
+          <li class="nav-item pr-2">
+            <a class="nav-link text-gray-600 hover:text-indigo-700 focus:text-indigo-700 hover:underline p-0"
+              href="./index.html">Home</a>
+          </li>
+          <li class="nav-item pr-2">
+            <a class="nav-link text-gray-600 hover:text-indigo-700 focus:text-indigo-700 hover:underline p-0"
+              href="./blog.html">Blog</a>
+          </li>
+        </ul>
+        <!-- right links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+  </nav>
+  <main>
+    <section>
+      <nav class="
+relative
+w-full
+flex flex-wrap
+items-center
+justify-between
+py-4
+bg-white
+text-gray-600
+hover:text-gray-700
+focus:text-gray-700
+navbar navbar-expand-lg navbar-light
+">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+          <button class="
+    navbar-toggler
+    text-gray-500
+    border-1
+    hover:shadow-none hover:no-underline
+    py-2
+    px-2.5
+    bg-transparent
+    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
+            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
+            <!-- Left links -->
+            <ul id="categories" class="navbar-nav flex flex-col pl-0 list-style-none mx-auto">
+              <li class="nav-item flex flex-col md:flex-row pr-2">
+                <!-- items-->
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+      </nav>
+    </section>
+
+    <section id="message" class="container mx-auto my-5">
+
+    </section>
+    <!-- loader -->
+    <section id="loader" class="hidden">
+      <div class="flex items-center justify-center space-x-2">
+        <div class="spinner-grow inline-block w-12 h-12 bg-indigo-800 rounded-full opacity-0" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex justify-between mx-auto my-7">
+      <div>
+        <button type="button"
+          class="inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Today's
+          Pick</button>
+        <button type="button"
+          class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Trending</button>
+      </div>
+      <div>
+        <div class="flex justify-center">
+          <div class="xl:w-40">
+            <select class="form-select appearance-none
+              block
+              w-full
+              px-3
+              
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding bg-no-repeat
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              aria-label="Default select example">
+              <option selected>Default</option>
+              <option value="1">Trending</option>
+              <option value="2">Today's pick</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news -->
+    <section id="news-section" class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 min-h-screen">
+
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable relative w-auto pointer-events-none">
+        <div
+          class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+            <h5 class="text-xl font-semibold leading-normal text-indigo-900" id="exampleModalScrollableLabel">
+
+            </h5>
+
+          </div>
+          <div>
+            <button type="button"
+              class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div id="news-detail" class="modal-body relative p-4">
+
+          </div>
+
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+            <button type="button"
+              class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+              data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="container-fluid w-full mt-8 mx-0 p-0 text-center text-white bg-indigo-800 bottom-0">
+
+    <div class="text-center p-4 bg-black">
+      © 2022 Copyright:
+      <a class="text-white" href="./index.html">World News Portal</a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

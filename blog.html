@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <script src="https://kit.fontawesome.com/5573a1ee7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="
+relative
+w-full
+flex flex-wrap
+items-center
+justify-between
+px-8
+py-4
+bg-indigo-50
+text-gray-500
+hover:text-gray-700
+focus:text-gray-700
+border-gray-400 border-b-2
+navbar navbar-expand-lg navbar-light
+">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+            <button class="
+    navbar-toggler
+    text-gray-500
+    border-0
+    hover:shadow-none hover:no-underline
+    py-2
+    px-2.5
+    bg-transparent
+    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+                <a class="text-xl text-black" href="#"><span class="text-indigo-700 font-semibold">World News</span>
+                    Portal</a>
+                <!-- Left links -->
+                <ul class="navbar-nav flex flex-col pl-0 list-style-none ml-auto">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-gray-600 hover:text-indigo-700 focus:text-indigo-700 hover:underline p-0"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link text-gray-600 hover:text-indigo-700 focus:text-indigo-700 hover:underline p-0"
+                            href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+                <!-- right links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+    </nav>
+
+    <main>
+        <section class="container p-8 mx-auto ">
+            <div class="flex justify-center">
+                <div class="block p-5 my-2 rounded-lg shadow-lg bg-white w-full">
+                    <h5 class="text-indigo-900 text-xl leading-tight font-semibold mb-2">What is the difference between
+                        var, let and const?</h5>
+                    <p class="text-gray-800 text-base ">
+                        A variable using var is re-declarable and re-assignable .it is global scoped. where let is block
+                        scoped, a variable using let is re-assignable,
+                        but it is not re-declarable.
+                        We can not redeclare and reassign a variable using const.
+                    </p>
+
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="block p-4 my-2 rounded-lg shadow-lg bg-white w-full">
+                    <h5 class="text-indigo-900 text-xl leading-tight font-semibold mb-2">What’s the difference between
+                        map, foreach, filter and find?
+                    </h5>
+                    <p class="text-gray-800 text-base ">
+                        The forEach() method does not create a new array based on the given array.
+                        The map() method creates an entirely new array.
+                        The filter() method creates a new array with the elements that satisfies the provided condition
+                        find is a function that iterates through an array and returns the first element in the array
+                        that matches the given predicate.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="block p-5 my-2 rounded-lg shadow-lg bg-white w-full">
+                    <h5 class="text-indigo-900 text-xl leading-tight font-semibold mb-2">Why template string is used?
+                    </h5>
+                    <p class="text-gray-800 text-base ">
+                        Template string is the easiest way to show multiline texts with variable. We can show innertext
+                        by template string.
+                        It is used in javascript file to generate html elements.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="block p-5 my-2 rounded-lg shadow-lg bg-white w-full">
+                    <h5 class="text-indigo-900 text-xl leading-tight font-semibold mb-2">Difference between regular and
+                        arrow function?</h5>
+                    <p class="text-gray-800 text-base ">
+                        A regular function contains the keyword 'function' without any arrow.
+                        Arrow function is a shorter way to write a function. A simple structure like '() => {}' is known
+                        as arrow function.
+                        We assign it into a variable.
+                        Calling process of both type function are same.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="container-fluid w-full mt-8 mx-0 p-0 text-center text-white bg-indigo-800 bottom-0">
+
+        <div class="text-center p-4 bg-black">
+            © 2022 Copyright:
+            <a class="text-white" href="./index.html">World News Portal</a>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
